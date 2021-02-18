@@ -1,20 +1,24 @@
 import React from "react";
-import User from "./User"
-import './App.css';
+import User from "./User";
+import "./App.css";
 import States from "./States";
-import UseReduce from "./UseReduce"
+import UseReduce from "./UseReduce";
+import { Routes, Route } from "react-router-dom";
+
+import {Home,Products} from "./Components/Pages";
+
 function App() {
   return (
-    
     <div className="App">
-      <User name="Sohaib" age="23" />
+      {/* <User name="Sohaib" age="23" />
       <UseReduce />
-      <States/>
-      
+      <States/> */}
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/Products" element={<Products />} />
+      </Routes>
     </div>
-    
-    
-    
   );
 }
 

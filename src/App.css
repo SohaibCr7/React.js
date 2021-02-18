@@ -1,3 +1,52 @@
-.App{
-    text-align: center;
+.Nav-Bar {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  background-color: #00567d;
+  height: 80px;
 }
+
+.logo{
+    width: 19%;
+}
+
+.Nav-Bar img {
+  padding-left: 100px;
+  padding-top: 21px;
+  height: 30px;
+  width: 150px;
+}
+
+.Links{
+    width: 60%;
+}
+.All-Links li a {
+  color: white;
+}
+
+.All-Links li {
+  font-size: 23px;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
+  padding-top: 15px;
+  padding-left: 20px; 
+  list-style-type: none;
+  /* text-decoration: none; */
+}
+.Add-To-Card {
+    width: 21%;
+    
+}
+
+.btn button{
+    margin-top: 30px;
+    margin-left: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
