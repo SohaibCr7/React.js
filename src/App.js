@@ -4,8 +4,9 @@ import "./App.css";
 import States from "./States";
 import UseReduce from "./UseReduce";
 import { Routes, Route } from "react-router-dom";
-
 import {Home,Products} from "./Components/Pages";
+// It is for Carosal
+// import 'pure-react-carousel/dist/react-carousel.es.css';
 
 function App() {
   return (

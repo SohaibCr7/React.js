@@ -2,11 +2,15 @@ import React from  "react";
 import {Link} from "react-router-dom"
 import NavBar from "./NavBar"
 import Slider from "./Slider"
+import Category from "./Category";
+import Footer from "./Footer"
 export function Home(){
     return (
         <div className="Container">
           <NavBar />
           <Slider />
+          <Category />
+          <Footer />
         </div>
       );
 }

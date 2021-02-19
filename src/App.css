@@ -1,3 +1,6 @@
+.App{
+    background-color: black;
+}
 .Nav-Bar {
   width: 100%;
   display: flex;
@@ -7,19 +10,19 @@
   height: 80px;
 }
 
-.logo{
-    width: 19%;
+.logo {
+  width: 19%;
 }
 
 .Nav-Bar img {
   padding-left: 100px;
   padding-top: 21px;
-  height: 30px;
-  width: 150px;
+  height: 50px;
+  width: 200px;
 }
 
-.Links{
-    width: 60%;
+.Links {
+  width: 60%;
 }
 .All-Links li a {
   color: white;
@@ -30,23 +33,100 @@
   font-weight: 500;
   font-family: "Times New Roman", Times, serif;
   padding-top: 15px;
-  padding-left: 20px; 
+  padding-left: 20px;
   list-style-type: none;
   /* text-decoration: none; */
 }
 .Add-To-Card {
-    width: 21%;
-    
+  width: 21%;
 }
 
-.btn button{
-    margin-top: 30px;
-    margin-left: 70px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 10px;
-    padding-top: 10px;
-    border-radius: 50%;
-    display: inline-block;
+.btn button {
+  margin-top: 20px;
+  margin-left: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+.Slider {
+  margin-top: 30px;
+  margin-left: 90px;
+  width: 87%;
+  height: auto;
+  background-color: black;
+}
+
+/* Category Css */
+.Category {
+  margin-top: 30px;
+  width: 100%;
+  height: 500px;
+  
+}
+.Heading{
+    width: 100%;
+    text-align: center;
+}
+.Heading h3{
+    font-size: 30px;
+    padding-top: 30px;
+    color: #fff;
+}
+.Heading span{
+    padding-left: 7px;
+    text-decoration: underline;
+    color: #ffff28;
+    font-style: italic;
+}
+.All-Boxes{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.Box {
+  position: relative;
+  width: 22.5%;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 7px 20px -5px rgb(0 0 0 / 15%);
+  transition: all 200ms ease;
+}
+
+.Box img{
+    border-radius: 15px;
+    width:300px;
+    height: 250px;
+}
+.Box img:hover{
+    -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+    -webkit-transform: scale(1.3);
+	transform: scale(1.2);
+}
+
+.Text-Description{
+    color: gray;
+    width: 300px;
+    text-align: center;
+}
+.Text-Description:hover{
+    text-decoration: underline;
+    color: orangered;
+    transition: .3s ease-in-out;
+}
+.Footer-Container{
+    background-color: white;
+    width: 100%;
+    height: 300px;
 }
 
