@@ -1,12 +1,13 @@
-.App{
-    background-color: black;
+.App {
+  background-color: black;
 }
+
 .Nav-Bar {
   width: 100%;
   display: flex;
   flex-direction: row;
   margin: 0;
-  background-color: #00567d;
+  background-color: #1B1F20;
   height: 80px;
 }
 
@@ -24,6 +25,7 @@
 .Links {
   width: 60%;
 }
+
 .All-Links li a {
   color: white;
 }
@@ -37,6 +39,7 @@
   list-style-type: none;
   /* text-decoration: none; */
 }
+
 .Add-To-Card {
   width: 21%;
 }
@@ -51,6 +54,7 @@
   border-radius: 50%;
   display: inline-block;
 }
+
 .Slider {
   margin-top: 30px;
   margin-left: 90px;
@@ -60,32 +64,36 @@
 }
 
 /* Category Css */
+
 .Category {
   margin-top: 30px;
   width: 100%;
   height: 500px;
-  
 }
-.Heading{
-    width: 100%;
-    text-align: center;
+
+.Heading {
+  width: 100%;
+  text-align: center;
 }
-.Heading h3{
-    font-size: 30px;
-    padding-top: 30px;
-    color: #fff;
+
+.Heading h3 {
+  font-size: 30px;
+  padding-top: 30px;
+  color: #fff;
 }
-.Heading span{
-    padding-left: 7px;
-    text-decoration: underline;
-    color: #ffff28;
-    font-style: italic;
+
+.Heading span {
+  padding-left: 7px;
+  text-decoration: underline;
+  color: #FFA700;
+  font-style: italic;
 }
-.All-Boxes{
-    padding-top: 30px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
+
+.All-Boxes {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 .Box {
@@ -100,33 +108,143 @@
   transition: all 200ms ease;
 }
 
-.Box img{
-    border-radius: 15px;
-    width:300px;
-    height: 250px;
-}
-.Box img:hover{
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-    -webkit-transform: scale(1.3);
-	transform: scale(1.2);
+.Box img {
+  border-radius: 15px;
+  width: 340px;
+  height: 250px;
 }
 
-.Text-Description{
-    color: gray;
-    width: 300px;
-    text-align: center;
-}
-.Text-Description:hover{
-    text-decoration: underline;
-    color: orangered;
-    transition: .3s ease-in-out;
-}
-.Footer-Container{
-    background-color: white;
-    width: 100%;
-    height: 300px;
+.Box img:hover {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-transform: scale(1.3);
+  transform: scale(1.2);
 }
 
+.Text-Description {
+  color: gray;
+  width: 300px;
+  text-align: center;
+}
+
+.Text-Description:hover {
+  text-decoration: underline;
+  color: orangered;
+  transition: .3s ease-in-out;
+}
+
+/* Footer Css */
+
+.main-footer {
+  width: 100%;
+  height: 400px;
+  background-color: #1B1F20;
+  color: #fff;
+  padding-top: 70px
+}
+
+.footer-content {
+  padding-bottom: 70px
+}
+
+.footer-content h5 {
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  position: relative;
+  color: #fff;
+}
+
+.footer-content h5:after {
+  position: absolute;
+  content: '';
+  left: 0;
+  bottom: -14px;
+  width: 28%;
+  height: 3px;
+  background: #FFA700
+}
+
+.footer-about a>img {
+  height: 60px;
+  width: 100%;
+  margin-bottom: 20px
+}
+
+.footer-about p {
+  text-align: justify;
+  line-height: 22px;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+ul.social-icon li {
+  display: inline-block
+}
+
+.social-icon a {
+  display: inline-block;
+  width: 30px;
+  color: #fff;
+  height: 30px;
+  padding-left: 17px;
+  border-radius: 50%;
+  font-size: 18px;
+  margin-right: 7px;
+  -webkit-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out
+}
+
+.social-icon a.facebook {
+  background: #4267B2
+}
+
+.social-icon a.instagram {
+  background: #EB7836
+}
+
+.social-icon a.youtube {
+  background: #FF0101
+}
+
+.social-icon a.twitter {
+  background: #1C9CEA
+}
+
+.social-icon a.whatsapp {
+  background: #2AC54D
+}
+
+.social-icon a.linkedin {
+  background: #0e76a8
+}
+
+.recent-signle-post {
+  margin-bottom: 15px
+}
+
+.social-icon a:hover {
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg)
+}
+
+.Quick-Links{
+  width: 100%;
+}
+
+ul.quick-link li {
+  display: block;
+  width: 50%;
+
+}
+ul.quick-link li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 0px;
+  display: inline-block
+}
