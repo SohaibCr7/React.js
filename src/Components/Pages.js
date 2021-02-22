@@ -1,25 +1,26 @@
 import React from  "react";
-import {Link} from "react-router-dom"
+// import {Link} from "react-router-dom"
 import NavBar from "./NavBar"
 import Slider from "./Slider"
-import Category from "./Category";
+import Categories from "./Categories";
 import Footer from "./Footer"
+
+import Product from "./Products"
 export function Home(){
     return (
         <div className="Container">
-          <NavBar />
+          {/* <NavBar /> */}
           <Slider />
-          <Category />
-          <Footer />
+          <Categories />
+          {/* <Footer /> */}
         </div>
       );
 }
 
 export function Products() {
     return (
-      <div className="Products">
-        <h1>CheckOut</h1>
-        <Link to="/">Home</Link>
+      <div className="Products" >
+        <Product />
       </div>
     );
   }

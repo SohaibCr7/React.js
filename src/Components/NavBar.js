@@ -10,15 +10,27 @@ function NavBar() {
       <div className="Links">
         <ul className="All-Links">
           <li>
-            <Link to="Products" style={{ textDecoration: "none" }}>
+            {/* <Link to="Products" style={{ textDecoration: "none" }}>
               Products
+            </Link> */}
+            <Link to="/">
+              <button className="Product-Home-btn" className="btn third">
+                Home
+              </button>
+            </Link>
+            <Link to="Products">
+              <button type="button" className="btn third">
+                Products
+              </button>
             </Link>
           </li>
         </ul>
       </div>
       <div className="Add-To-Card">
         <div className="btn">
-          <button type="button">Add To Card</button>
+          <button type="button" className="btn fourth">
+            Add To Card
+          </button>
         </div>
       </div>
     </div>

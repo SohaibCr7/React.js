@@ -35,24 +35,42 @@
   font-weight: 500;
   font-family: "Times New Roman", Times, serif;
   padding-top: 15px;
-  padding-left: 20px;
+  padding-left: 70px;
   list-style-type: none;
   /* text-decoration: none; */
 }
 
-.Add-To-Card {
-  width: 21%;
+.third {
+  padding: 10px;
+  border-radius: 50px;
+  border-color: #3498db;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.third:hover {
+  box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px #3498db;
 }
 
-.btn button {
+.fourth {
   margin-top: 20px;
-  margin-left: 70px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 10px;
-  padding-top: 10px;
-  border-radius: 50%;
-  display: inline-block;
+  float:right;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  /* border-color: #FF0000; */
+  color: #fff;
+  box-shadow: 0 0 40px 40px #FF0000 inset, 0 0 0 0 #FF0000;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.fourth:hover {
+  box-shadow: 0 0 10px 0 #FF0000 inset, 0 0 10px 4px #FF0000;
+}
+
+.Add-To-Card {
+  width: 21%;
 }
 
 .Slider {
@@ -67,6 +85,7 @@
 
 .Category {
   margin-top: 30px;
+  padding-bottom: 70px;
   width: 100%;
   height: 500px;
 }
@@ -110,7 +129,7 @@
 
 .Box img {
   border-radius: 15px;
-  width: 340px;
+  width: 300px;
   height: 250px;
 }
 
@@ -123,13 +142,14 @@
   transform: scale(1.2);
 }
 
-.Text-Description {
+.Text-Description h3{
+  text-decoration: none;
   color: gray;
   width: 300px;
   text-align: center;
 }
 
-.Text-Description:hover {
+.Text-Description h3:hover{
   text-decoration: underline;
   color: orangered;
   transition: .3s ease-in-out;
@@ -139,27 +159,25 @@
 
 .main-footer {
   width: 100%;
-  height: 400px;
+  height: 350px;
   background-color: #1B1F20;
   color: #fff;
   padding-top: 70px
 }
 
-.footer-content {
-  padding-bottom: 70px
-}
 
 .footer-content h5 {
   text-transform: uppercase;
   margin-bottom: 40px;
   position: relative;
   color: #fff;
+  padding-left: 50px;
 }
 
 .footer-content h5:after {
   position: absolute;
   content: '';
-  left: 0;
+  left: 50px;
   bottom: -14px;
   width: 28%;
   height: 3px;
@@ -169,14 +187,19 @@
 .footer-about a>img {
   height: 60px;
   width: 100%;
-  margin-bottom: 20px
+  
 }
 
 .footer-about p {
   text-align: justify;
   line-height: 22px;
-  margin-bottom: 15px;
   color: #fff;
+  padding-left: 50px;
+  padding-right: 400px;
+}
+
+.social-icon{
+  padding-left: 200px;
 }
 
 ul.social-icon li {
@@ -221,10 +244,6 @@ ul.social-icon li {
   background: #0e76a8
 }
 
-.recent-signle-post {
-  margin-bottom: 15px
-}
-
 .social-icon a:hover {
   -webkit-transform: rotate(360deg);
   -ms-transform: rotate(360deg);
@@ -236,6 +255,7 @@ ul.social-icon li {
 }
 
 ul.quick-link li {
+  padding-left: 20px;
   display: block;
   width: 50%;
 
@@ -245,6 +265,79 @@ ul.quick-link li a {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500;
-  padding: 6px 0px;
   display: inline-block
+}
+
+/* Products Css */
+
+
+.Products{
+  width: 100%;
+  height: auto;
+}
+
+.Products:after {
+ position: absolute;
+  content: '';
+  left: 95px;
+  top: 200px;
+  width: 85%;
+  height: 5px;
+  background: #FFA700
+}
+
+.Product-Box{
+  position: relative;
+  width: 22.5%;
+  height: 400px;
+  margin: 10px;
+  padding: 10px;
+  margin-top: 70px;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: #fff;
+  box-shadow: 0 7px 20px -5px rgb(0 0 0 / 15%);
+  transition: all 200ms ease;
+}
+
+.Product-Box img {
+border-radius: 15px;
+width: 300px;
+height: 250px;
+}
+
+.Product-Box img:hover {
+-webkit-transform: scale(1);
+transform: scale(1);
+-webkit-transition: .3s ease-in-out;
+transition: .3s ease-in-out;
+-webkit-transform: scale(1.3);
+transform: scale(1.2);
+}
+
+.Product-Box h4{
+  color: gray;
+}
+
+.All-Product-Box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+.addButton {
+  
+  float:right;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 50px;
+  /* border-color: #FF0000; */
+  color: #fff;
+  box-shadow: 0 0 40px 40px #FF0000 inset, 0 0 0 0 #FF0000;
+  -webkit-transition: all 150ms ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+.addButton:hover {
+  box-shadow: 0 0 10px 0 #FF0000 inset, 0 0 0px 0px #FF0000;
 }
