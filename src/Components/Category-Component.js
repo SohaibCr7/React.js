@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 
 function Category(props) {
   return (
-    <div className="Box">
+    <div className="box">
       <img src={props.src} />
-      <div className="Text-Description">
+      <div className="text-description">
         <Link to={props.link}>
           <h3>{props.productName}</h3>
         </Link>

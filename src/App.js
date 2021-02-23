@@ -4,23 +4,34 @@ import "./App.css";
 import NavBar from "./Components/NavBar";
 import Footer from "./Components/Footer";
 import { Routes, Route } from "react-router-dom";
-import { Home, Products } from "./Components/Pages";
+import Home from "./Pages/Home";
+import Product from "./Pages/Product";
+import { HashRouter as Router } from "react-router-dom";
 
-// It is for Carosal
-// import 'pure-react-carousel/dist/react-carousel.es.css';
+// const user = {
+//   name: "sohaib",
+//   data: "UI Developer",
+// };
+
+// const userData = React.createContext();
+// export const UserConsumer = userData.Consumer;
 
 function App() {
   return (
-    <div className="App">
-      {/* <User name="Sohaib" age="23" />
-      <UseReduce />
-      <States/> */}
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/Products" element={<Products />} />
-      </Routes>
-      <Footer />
+    <div className="app">
+      <div className="loader-bg">
+        <div className="loader"></div>
+      </div>
+      <Router>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          {/* <userData.Provider value={user}> */}
+            <Route path="/Products" element={<Product />} />
+          {/* </userData.Provider> */}
+        </Routes>
+        <Footer />
+      </Router>
     </div>
   );
 }

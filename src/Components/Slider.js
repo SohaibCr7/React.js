@@ -1,12 +1,4 @@
 import React from "react";
-import {
-  CarouselProvider,
-  Slider,
-  Slide,
-  ButtonBack,
-  ButtonNext,
-  
-} from "pure-react-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import { Carousel } from "react-responsive-carousel";
 
@@ -14,7 +6,7 @@ const slideImages = ["Assets/logo.jpg", "Assets/image.jpg", "Assets/logo2.jpg"];
 
 function SliderImage() {
   return (
-    <div className="Slider">
+    <div className="slider">
       <Carousel autoPlay showArrows={true} showThumbs={false} ImageWithZoom={true}>
         <div>
           <img src={slideImages[0]} alt="img1" height="300px" width="100px" />

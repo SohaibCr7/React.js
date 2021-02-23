@@ -3,12 +3,12 @@ import { Link } from "react-router-dom";
 
 function NavBar() {
   return (
-    <div className="Nav-Bar">
-      <div className="logo">
+    <div className="nav-bar">
+      <div id="logo">
         <img src="Assets/logo3.png" alt="logo" />
       </div>
-      <div className="Links">
-        <ul className="All-Links">
+      <div className="links">
+        <ul className="all-links">
           <li>
             {/* <Link to="Products" style={{ textDecoration: "none" }}>
               Products
@@ -26,11 +26,12 @@ function NavBar() {
           </li>
         </ul>
       </div>
-      <div className="Add-To-Card">
+      <div className="add-to-card">
         <div className="btn">
-          <button type="button" className="btn fourth">
-            Add To Card
-          </button>
+          <i className="fa fa-cart-plus fa-3x"></i>
+        </div>
+        <div className="counter-number">
+          <p id="p-items"> 0</p>
         </div>
       </div>
     </div>
