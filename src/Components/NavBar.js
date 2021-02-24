@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import Sidenavbar from "./Sidenavbar";
 function NavBar() {
+
+  const [showSlider, setShowSlider] = useState(false);
+
+  const openSidenavbar = async () => {
+    setShowSlider(!showSlider);
+  };
+
   return (
     <div className="nav-bar">
       <div id="logo">
@@ -28,10 +35,14 @@ function NavBar() {
       </div>
       <div className="add-to-card">
         <div className="btn">
-          <i className="fa fa-cart-plus fa-3x"></i>
+          <i
+            className="fa fa-cart-plus fa-3x"
+            onClick={() => openSidenavbar()}
+          ></i>
         </div>
+        {showSlider ? <Sidenavbar /> : null}
         <div className="counter-number">
-          <p id="p-items"> 0</p>
+          <p id="p-items">0</p>
         </div>
       </div>
     </div>

@@ -81,9 +81,7 @@
   }
 } */
 
-
 /* App Css */
-
 
 .app {
   background-color: black;
@@ -159,16 +157,16 @@
   width: 21%;
 }
 
-.add-to-card p{
+.add-to-card p {
 }
 
-.fa-cart-plus{
+.fa-cart-plus {
   padding-top: 25px;
   padding-left: 170px;
   color: white;
 }
 
-.counter-number p{
+.counter-number p {
   z-index: 1;
   position: absolute;
   top: 0;
@@ -378,7 +376,6 @@ ul.quick-link li a {
   display: inline-block;
 }
 
-
 /* Products Css */
 
 .products {
@@ -454,4 +451,44 @@ ul.quick-link li a {
 }
 .addButton:hover {
   box-shadow: 0 0 10px 0 #ff0000 inset, 0 0 0px 0px #ff0000;
+}
+
+/* Side Bar Css */
+
+.side-nav-container {
+  position: fixed;
+  right: 0.9px;
+  width: 50%;
+  height: auto;
+  z-index: 1;
+  opacity: -1px;
+  background-color: #b0b0b0;
+}
+
+.cart-products{
+  width: 100%;
+  height: auto;
+
+}
+
+.cart-div{
+  background-color: rebeccapurple;
+  width: 100%;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cart-headings{
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cart-div img{
+  padding-top: 4px;
+  padding-left: 0px;
+  width: 50px;
 }

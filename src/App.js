@@ -8,14 +8,6 @@ import Home from "./Pages/Home";
 import Product from "./Pages/Product";
 import { HashRouter as Router } from "react-router-dom";
 
-// const user = {
-//   name: "sohaib",
-//   data: "UI Developer",
-// };
-
-// const userData = React.createContext();
-// export const UserConsumer = userData.Consumer;
-
 function App() {
   return (
     <div className="app">
@@ -26,9 +18,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<Home />} />
-          {/* <userData.Provider value={user}> */}
-            <Route path="/Products" element={<Product />} />
-          {/* </userData.Provider> */}
+          <Route path="/Products" element={<Product />} />
         </Routes>
         <Footer />
       </Router>
