@@ -1,17 +1,22 @@
 import { React, useState } from "react";
-
-export default function Sidenavbar() {
+import { Link } from "react-router-dom";
+export default function Sidenavbar(props) {
   var localValues = JSON.parse(localStorage.getItem("products"));
-  console.log(localValues);
+
   return (
     <div className="side-nav-container" id="main">
-      <div className="heading">
+      <div className="heading1">
+        <div className="checkout-btn">
+          <Link to="CheckOut">
+            <button>Checkout</button>
+          </Link>
+        </div>
         <h3>
           Selected<span>Products</span>
         </h3>
       </div>
       <div className="cart-products">
-      <div className="cart-headings">
+        <div className="cart-headings">
           <h4>Images</h4>
           <h4>Product Name</h4>
           <h4>Description</h4>
@@ -21,6 +26,13 @@ export default function Sidenavbar() {
         {localValues.map((items) => {
           return (
             <div key={items.pId} className="cart-div">
+              <i
+                className="fa fa-times"
+                onClick={() => {
+                  // deleteItem(items.pId);
+                  props.delete(items.pId);
+                }}
+              ></i>
               <img src={items.pImage} />
               <p>{items.pName}</p>
               <p>{items.pDesc}</p>

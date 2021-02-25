@@ -100,8 +100,8 @@
   width: 19%;
 }
 
-.nav-bar img {
-  padding-left: 100px;
+.logo-img{
+ padding-left: 100px;
   padding-top: 21px;
   height: 50px;
   width: 200px;
@@ -119,8 +119,8 @@
   font-size: 23px;
   font-weight: 500;
   font-family: "Times New Roman", Times, serif;
-  padding-top: 15px;
-  padding-left: 70px;
+  padding-top: 5px;
+  padding-left: 10px;
   list-style-type: none;
   /* text-decoration: none; */
 }
@@ -157,13 +157,15 @@
   width: 21%;
 }
 
-.add-to-card p {
-}
-
 .fa-cart-plus {
   padding-top: 25px;
-  padding-left: 170px;
+  padding-left: 150px;
   color: white;
+}
+
+.fa-cart-plus:hover{
+  color: #eb6936;
+  transition: 0.7ease;
 }
 
 .counter-number p {
@@ -463,32 +465,106 @@ ul.quick-link li a {
   z-index: 1;
   opacity: -1px;
   background-color: #b0b0b0;
+  transition: width 2s;
+}
+
+
+.heading1 {
+  width: 100%;
+  text-align: center;
+}
+
+.heading1 h3{
+  font-size: 30px;
+  padding-top: 0px;
+  color: #fff;
+}
+
+.heading1 span {
+  padding-left: 7px;
+  text-decoration: underline;
+  color: #ffa700;
+  font-style: italic;
 }
 
 .cart-products{
-  width: 100%;
+  width: 1345px;
   height: auto;
-
-}
-
-.cart-div{
-  background-color: rebeccapurple;
-  width: 100%;
-  margin-right: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
 }
 
 .cart-headings{
-  background-color: yellow;
+  text-align: left;
+  width: 1345px;
+  height: 50px;
+  background-color: #ffa700;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  
+}
+
+.cart-headings h4{
+  padding-left: 60px;
+}
+
+.cart-div{
+  width: 1345px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+}
+
+.cart-div p{
+  font-weight: 600;
+  width: 70px;
+  height: 30px;
+  display: flex;
+  padding-left: 75px;
+}
+
+.cart-div i{
+  padding-top: 20px;
+  padding-left: 20px;
+  color: red;
 }
 
 .cart-div img{
-  padding-top: 4px;
-  padding-left: 0px;
+  padding-top: 5px;
   width: 50px;
+  padding-left: 35px;
 }
+.checkout-btn{
+  padding-left: 500px;
+}
+
+/* Checkout Page Css */
+
+.checkout-page{
+  width: 100%;
+  height: 400px;
+}
+
+.user-detail-foam{
+  width: 200px;
+  height: 280px;
+  background-color: #fff;
+  margin-left: 200px;
+  margin-top: 100px;
+  padding: 50px;
+  border-radius: 10%;
+}
+.user-detail-foam label{
+  color: #eb7836;
+  font-weight: 700;
+}
+
+.user-detail-foam input{
+
+  width: 190px;
+  height: 25px;
+}
+
+
+
+
+
+

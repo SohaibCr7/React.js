@@ -1,10 +1,10 @@
 import React from "react";
 import Products from "../Components/Products";
 
-export default function Product() {
+export default function Product(props) {
   return (
     <div className="products">
-      <Products />
+      <Products update = {props.updateproduct}/>
     </div>
   );
 }

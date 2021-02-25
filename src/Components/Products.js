@@ -1,58 +1,11 @@
 import React from "react";
 import { productsData } from "./productData";
-import {addProduct} from "./LocalstorageProducts"
-// const products = [
-//   {
-//     productId: 1,
-//     productName: "Rado Watch",
-//     productImage: "Assets/watch.jpg",
-//     productDescription: "Lexuary Rado Watch",
-//     inCart: false,
-//     productPrice: "10,000",
-//   },
-//   {
-//     productId: 2,
-//     productName: "Leather Jacket",
-//     productImage: "Assets/jacket.jpg",
-//     productDescription: "Winter Collection",
-//     inCart: false,
-//     productPrice: "6000",
-//   },
-//   {
-//     productId: 3,
-//     productName: "Mobile",
-//     productImage: "Assets/mobile.jpg",
-//     productDescription: "Touch and Type",
-//     inCart: false,
-//     productPrice: "30000",
-//   },
-//   {
-//     productId: 4,
-//     productName: "Ps5",
-//     productImage: "Assets/ps5.jpg",
-//     productDescription: "Gaming Console",
-//     inCart: false,
-//     productPrice: "80,000",
-//   },
-//   {
-//     productId: 5,
-//     productName: "Controller",
-//     productImage: "Assets/ps5controller.jpg",
-//     productDescription: "Controller",
-//     inCart: false,
-//     productPrice: "20,0000",
-//   },
-//   {
-//     productId: 6,
-//     productName: "Controller",
-//     productImage: "Assets/ps5controller.jpg",
-//     productDescription: "Controller",
-//     inCart: false,
-//     productPrice: "20,0000",
-//   },
-// ];
 
-function Products() {
+function Products(props) {
+console.log("test",props)
+  const addProducts = (items) => {
+    props.update(items.productId,items.productImage,items.productName,items.productDescription,items.productPrice)
+  }
   return (
     <div className="products">
       <div className="heading">
@@ -72,7 +25,7 @@ function Products() {
               <button
                 type="button"
                 className="btn addButton"
-                onClick={() => addProduct(items.productId,items.productImage,items.productName,items.productDescription,items.productPrice)}
+                onClick={() => addProducts(items) }
               >
                 AddTOCard
               </button>
