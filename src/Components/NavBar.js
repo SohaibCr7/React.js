@@ -1,14 +1,40 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import Sidenavbar from "./Sidenavbar";
+import "../App";
+function NavBar(props) {
+  // var localValues = JSON.parse(localStorage.getItem("products"));
+  // var localStorageLength = localValues != null ? localValues.length : 0;
+  const [showSlider, setShowSlider] = useState(false);
+  const [cartItemsLength, setCartItemsLength] = useState(
+    props.localStorageLength.length
+  );
 
-function NavBar() {
+  // if(localValues != null){
+  //   localStorage = localValues.length
+  // }else{
+  //   localStorage = 0
+  // }
+
+  useEffect(() => {
+    setCartItemsLength(props.localStorageLength.length);
+  });
+
+  const openSidenavbar = async () => {
+    setShowSlider(!showSlider);
+  };
+
+  const updateCartItemLengths = (length) => {
+    setCartItemsLength(length);
+  };
+
   return (
-    <div className="Nav-Bar">
-      <div className="logo">
-        <img src="Assets/logo3.png" alt="logo" />
+    <div className="nav-bar">
+      <div id="logo" className="logo-img">
+        <img id="img-id" src="Assets/logo3.png" alt="logo" />
       </div>
-      <div className="Links">
-        <ul className="All-Links">
+      <div className="links">
+        <ul className="all-links">
           <li>
             {/* <Link to="Products" style={{ textDecoration: "none" }}>
               Products
@@ -26,11 +52,18 @@ function NavBar() {
           </li>
         </ul>
       </div>
-      <div className="Add-To-Card">
+      <div className="add-to-card">
         <div className="btn">
-          <button type="button" className="btn fourth">
-            Add To Card
-          </button>
+          <i
+            className="fa fa-cart-plus fa-3x"
+            onClick={() => openSidenavbar()}
+          ></i>
+        </div>
+        {showSlider ? (
+          <Sidenavbar cartItemSize={updateCartItemLengths} delete={props.deleteProduct}/>
+        ) : null}
+        <div className="counter-number">
+          <p id="p-items">{cartItemsLength}</p>
         </div>
       </div>
     </div>

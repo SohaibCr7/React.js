@@ -57,23 +57,19 @@ function Footer() {
             </li>
           </ul>
 
-          <div className="Quick-Links">
-            <h5>Quick Links</h5>
-            <ul className="quick-link">
-              <li>
-                <a href="#">
-                  <span className="fa fa-angle-double-right"></span>Home
-                </a>
+          <h5>Quick Links</h5>
+          <ul className="quick-link">
+            <li>
+              <a href="#">
+                <span className="fa fa-angle-double-right"></span>Home
+              </a>
+            </li>
+            <Link to="Products">
+              <li style={{color:"white"}}>
+                <span className="fa fa-angle-double-right"></span>Products
               </li>
-              <Link to="Products">
-                <li>
-                  <a href="#aboutus">
-                    <span className="fa fa-angle-double-right"></span>Products
-                  </a>
-                </li>
-              </Link>
-            </ul>
-          </div>
+            </Link>
+          </ul>
         </div>
       </div>
     </div>
