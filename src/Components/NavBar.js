@@ -16,10 +16,6 @@ function NavBar(props) {
   //   localStorage = 0
   // }
 
-  // useEffect(() => {
-  //   props.localStorageLength.length;
-  // });
-
   useEffect(() => {
     setCartItemsLength(props.localStorageLength.length);
   });

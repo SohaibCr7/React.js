@@ -11,7 +11,7 @@ import { HashRouter as Router } from "react-router-dom";
 function App() {
 
   const [localProducts, setLocalProducts] = useState(() => {
-    return JSON.parse(localStorage.getItem("products"));
+    return JSON.parse(localStorage.getItem("products")) || [];
   });
 
   // const updateProduct = () => {

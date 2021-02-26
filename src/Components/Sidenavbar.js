@@ -1,7 +1,7 @@
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
 export default function Sidenavbar(props) {
-  var localValues = JSON.parse(localStorage.getItem("products"));
+  var localValues = JSON.parse(localStorage.getItem("products")) || [];
 
   return (
     <div className="side-nav-container" id="main">

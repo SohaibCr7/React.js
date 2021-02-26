@@ -4,7 +4,7 @@ export const productsData = [
     productName: "Rado Watch",
     productImage: "Assets/watch.jpg",
     productDescription: "Lexuary Rado Watch",
-    productPrice: "10,000",
+    productPrice: "10000",
   },
   {
     productId: 1,
@@ -15,7 +15,7 @@ export const productsData = [
   },
   {
     productId: 2,
-    productName: "Mobile",
+    productName: "Mobile Galaxy",
     productImage: "Assets/mobile.jpg",
     productDescription: "Touch and Type",
     productPrice: "30000",
@@ -25,20 +25,20 @@ export const productsData = [
     productName: "Ps5",
     productImage: "Assets/ps5.jpg",
     productDescription: "Gaming Console",
-    productPrice: "80,000",
+    productPrice: "80000",
   },
   {
     productId: 4,
     productName: "Controller",
     productImage: "Assets/ps5controller.jpg",
     productDescription: "Controller",
-    productPrice: "20,000",
+    productPrice: "20000",
   },
   {
     productId: 5,
     productName: "Controller",
     productImage: "Assets/ps5controller.jpg",
     productDescription: "Controller",
-    productPrice: "20,000",
+    productPrice: "1500",
   },
 ];
